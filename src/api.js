@@ -18,3 +18,9 @@ export const getArticle = (articleId) => {
     return response.data.article
   })
 }
+
+export const getComments = (articleId) => {
+  return api.get(`/articles/${articleId}/comments`).then((response => {
+    return response.data.comments
+  }))
+}
