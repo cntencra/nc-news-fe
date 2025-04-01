@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+a {
+    text-decoration: none;
+    color: #0a090c;
+}
+
+
 #header-container {
     display:flex;
     border-bottom: #0a090c solid 2px;
@@ -21,6 +33,7 @@
     text-align: center;
     margin-left: 5vw;
 }
+
 nav {
     display: flex;
     flex-direction: row;
@@ -31,10 +44,7 @@ nav {
     border-bottom:white solid 4px;
 }
 
-a {
-    text-decoration: none;
-    color: #0a090c;
-}
+
 
 .nav-div > h2 {
     margin-bottom: 2px;
@@ -46,85 +56,12 @@ a {
     color: #07393c
 }
 
-#articles-container > ul {
-    list-style-type: none;
-    padding-right: 40px;
-    padding-top: 20px;
-}
 
-#articles-container > li {
-    display: flex;
-    border-bottom: #0a090c solid 3px;
-    margin-bottom: 20px
-
-}
-
-#listarticles-container > h3 {
-    margin-top: 0;
-    margin-right: 10px;
-}
-
-#articles-container > ul > li > h3:hover {
-    text-decoration: underline;
-}
-
-#articles-container ul > li > img {
-    max-width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#article-info {
-    display: flex;
-}
-
-#article-info > p {
-    text-align: left;
-}
-
-#article-container {
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-#article-container > h2 {
-    padding-bottom: 15px;;
-}
-
-#article-container > img {
-    max-width: 90vw;
-}
 
 @media only screen and (min-width: 800px) {
 
     #header-container > h1 {
         margin-left: 10vw;
-    }
-
-    #articles-container > ul > li {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    #articles-container ul > li > img {
-        grid-column: 3/ 4;
-        grid-row: 1/3;
-        height:100px;
-        max-width: 150px;
-        margin-top: auto;
-        margin-bottom: auto;
-        object-fit: fill;
-    }
-    
-    #articles-container ul > li > #article-info {
-        grid-column: 1/3;
-        grid-row: 2/3;
-    
-    }
-    
-    #article-info > p {
-        margin-left: 20px;
-        text-align: left;
     }
 
     ul {
@@ -144,23 +81,12 @@ a {
       padding-right:  10vw;
       padding-left: 10vw;
     }
-
-    #article-container {
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
   }
 
   @media only screen and (min-width: 1200px) {
     ul {
       padding-right:  15vw;
       padding-left: 15vw;
-    }
-
-
-    #article-container {
-        padding-left: 15vw;
-        padding-right: 15vw;
     }
   }
 
