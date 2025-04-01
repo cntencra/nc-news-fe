@@ -94,17 +94,37 @@ li > #article-info {
     text-align: left;
 }
 
+#article-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#article-container > h2 {
+    padding-bottom: 15px;;
+}
+
+#article-container > img {
+    max-width: 90vw;
+}
+
 @media only screen and (min-width: 800px) {
     ul {
       padding-right:  5vw;
       padding-left: 5vw;
     }
+
+  
   }
 
   @media only screen and (min-width: 1000px) {
     ul {
       padding-right:  10vw;
       padding-left: 10vw;
+    }
+
+    #article-container {
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
   }
 
@@ -113,4 +133,11 @@ li > #article-info {
       padding-right:  15vw;
       padding-left: 15vw;
     }
+
+    #article-container {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
   }
+
+ 
