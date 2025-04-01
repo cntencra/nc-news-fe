@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const ListArticle = ({article}) => {
     return (
-   <>
+   <div id="list-article-container">
         <h3> 
             <Link to={`/article/${article.article_id}`}>{article.title}</Link>
         </h3>
@@ -12,7 +12,7 @@ const ListArticle = ({article}) => {
             <p>{`Topic: ${article.topic}`}</p>
             <p>{`Likes: ${article.votes}`}</p>
         </div>
-    </>
+    </div>
     
     )
 
