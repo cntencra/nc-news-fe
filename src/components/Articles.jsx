@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import '../css/articles.css'
 import { getArticles } from "../api"
 import ListArticle from "./ListArticle";
 import useApiRequest from "../useApiRequest";
@@ -12,8 +12,7 @@ import useApiRequest from "../useApiRequest";
     if (isLoading) return <p>Loading... </p>
     
     return (
-        <div id="articles-container">
-            <ul>
+            <ul id="articles-list">
             {articles.map((article)=> {
                 return (
                 <li key={article.article_id}>
@@ -22,7 +21,6 @@ import useApiRequest from "../useApiRequest";
                 )
             })}
             </ul>
-        </div>
     )
  }
 
