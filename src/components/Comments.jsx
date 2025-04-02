@@ -17,17 +17,17 @@ const Comments = ({articleId}) => {
                 {comments.map((comment) => {
                     const date  = (new Date(comment.created_at)).toLocaleDateString('en-GB')
                     return (
-                    <li key={comment.comment_id} id="comment-list">
-                        <h3 id="comment-author">{comment.author}</h3>
-                        <p id="comment-date">{date}</p>
-                        <p id="comment-body">{comment.body}</p>
-                        <p id="comment-votes">Votes {comment.votes}</p>
+                    <li key={comment.comment_id} className="comment-list">
+                        <h3 className="comment-author">{comment.author}</h3>
+                        <p className="comment-date">{date}</p>
+                        <p className="comment-body">{comment.body}</p>
+                        <p className="comment-votes">Votes {comment.votes}</p>
                     </li>
                     )
                 })}
             </ul>
         </div>
-    )
+    )   
 
 }
 
