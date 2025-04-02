@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Articles from './components/Articles';
-import ArticleAndComments from './components/ArticleAndComments';
+import Article from './components/Article';
 
 function App() {
 
@@ -17,8 +17,8 @@ function App() {
     <main>
       <Routes>
         <Route path = '/'/>
-        <Route path = '/article/:article_id' element={<ArticleAndComments />}/>
         <Route path = '/articles' element={<Articles />}/>
+        <Route path = '/article/:article_id' element={<Article />}/>
         <Route path = '/articles/:topic'/>
         <Route path = '/user'/>
       </Routes>

@@ -1,19 +1,31 @@
-import ArticleVotes from "./ArticleVotes"
+import '../css/article.css'
 
-const Article = ({article}) => {
+import { useParams } from 'react-router-dom';
 
-    const date  = (new Date(article.created_at)).toLocaleDateString('en-GB')
+import Comments from './Comments';
+import MainArticle from './MainArticle';
+
+import { getArticle } from '../api';
+import useApiRequest from '../useApiRequest';
+
+
+const Article = () => {
+
+    const { article_id } = useParams();
+
+    const{data:article, isLoading, error} = useApiRequest(getArticle, article_id)
+    
+    if (error) return <p>Error {error.msg}</p>
+
+    if (isLoading) return <p>Loading... </p>
 
     return (
-        <div id="article-container">
-            <h2>{article.title}</h2>
-            <img src={article.article_img_url} alt="" />
-            <p>Author | {article.author}</p>
-            <p>{date}</p>
-            <p>{article.body}</p>
-        <ArticleVotes article={article}/>
-        </div>
+    <>
+        <MainArticle article={article}/>
+        <Comments articleId={article_id}/>
+    </>
     )
 
 }
+
 export default Article
