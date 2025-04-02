@@ -1,14 +1,6 @@
-import useApiRequest from "../useApiRequest";
-import { getArticle } from "../api";
+import ArticleVotes from "./ArticleVotes"
 
-const Article = ({articleId}) => {
-
-    
-    const{data:article, isLoading, error} = useApiRequest(getArticle, articleId)
-
-    if (error) return <p>Error {error.msg}</p>
-
-    if (isLoading) return <p>Loading... </p>
+const Article = ({article}) => {
 
     const date  = (new Date(article.created_at)).toLocaleDateString('en-GB')
 
@@ -19,9 +11,9 @@ const Article = ({articleId}) => {
             <p>Author | {article.author}</p>
             <p>{date}</p>
             <p>{article.body}</p>
+        <ArticleVotes article={article}/>
         </div>
     )
-
 
 }
 export default Article
