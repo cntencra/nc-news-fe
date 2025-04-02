@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { postComment } from "../api";
 
-const NewComment = ({articleId, addComment, userName}) => {
+const PostComment = ({articleId, addComment, userName}) => {
 
     const [comment, setComment] = useState("")
     const [isLoading, setIsLoading] = useState(false);
@@ -71,4 +71,4 @@ const NewComment = ({articleId, addComment, userName}) => {
 
 }
 
-export default NewComment
+export default PostComment

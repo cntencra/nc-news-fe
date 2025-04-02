@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { getComments } from "../api"
 import useApiRequest from "../useApiRequest"
-import NewComment from "./NewComment"
+import PostComment from "./PostComment"
 import { UserContext } from "../contexts/User"
 
 const Comments = ({articleId}) => {
@@ -22,7 +22,7 @@ const Comments = ({articleId}) => {
     return (
         <div id="comments-container">
             <h3>Comments</h3>
-            <NewComment articleId={articleId} addComment={addComment} userName={userName}/>
+            <PostComment articleId={articleId} addComment={addComment} userName={userName}/>
             <ul>
                 {comments.map((comment) => {
                     const date  = (new Date(comment.created_at)).toLocaleDateString('en-GB')
