@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Articles from './components/Articles';
 import Article from './components/Article';
+import UserProfile from './components/UserProfile';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
         <Route path = '/articles' element={<Articles />}/>
         <Route path = '/article/:article_id' element={<Article />}/>
         <Route path = '/articles/:topic'/>
-        <Route path = '/user'/>
+        <Route path = '/user' element={<UserProfile />}/>
       </Routes>
     </main>
     </>

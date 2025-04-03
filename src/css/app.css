@@ -13,6 +13,18 @@ a {
     color: #0a090c;
 }
 
+h3 {
+    font-size: medium;
+}
+
+p {
+    font-size:small;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
 
 #header-container {
     display:flex;
@@ -20,8 +32,13 @@ a {
     background-color: #2c666e;
     color: #f0edee;
 }
+
+#home-icon-container {
+    flex-grow: 1;
+}
+
 #home-icon-container > img {
-    max-height: 10vh;
+    max-height: 5vh;
     margin: 5px;
     border-color: #0a090c;
     border-width: 3px;
@@ -31,12 +48,44 @@ a {
 
 #header-container > h1 {
     text-align: center;
-    margin-left: 5vw;
+    margin-left: 2vw;
+    font-size:larger;
+}
+
+
+#header-logged-in-user  {
+    max-width:2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: center;
+}
+
+#header-logged-in-user > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+#header-logged-in-user > a > img {
+    margin-top: 10px;
+    max-width: 70%;
+    background-color: #f0edee;
+    border-radius: 60%;
+}
+
+#header-logged-in-user > a > p {
+    text-align: center;
+    margin:0;
+    font-size:smaller;
+    color: white;
 }
 
 nav {
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
 .nav-div {
     margin-left: 20px;
@@ -48,10 +97,11 @@ nav {
 
 .nav-div > h2 {
     margin-bottom: 2px;
+    font-size: medium;
 }
 
 .nav-div:hover {
-    border-bottom:#2c666e solid 3px;
+    text-decoration: underline;
     cursor: pointer;
     color: #07393c
 }
@@ -60,14 +110,39 @@ nav {
 
 @media only screen and (min-width: 800px) {
 
-    #header-container > h1 {
-        margin-left: 10vw;
+    h3 {
+        font-size: large;
+    }
+    
+    p {
+        font-size:medium;
     }
 
     ul {
-      padding-right:  5vw;
-      padding-left: 5vw;
+        padding-right:  5vw;
+        padding-left: 5vw;
+      }
+    
+
+    #home-icon-container > img {
+        max-height: 10vh;
     }
+    
+    #header-container > h1 {
+        margin-left: 10vw;
+        font-size: xx-large;
+    }
+
+    #header-logged-in-user {
+        margin-right: 1%;
+        
+    }
+
+    .nav-div > h2 {
+        font-size:x-large;
+    }
+
+   
 
   
   }

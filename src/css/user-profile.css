@@ -1,0 +1,18 @@
+#user-comment-title {
+    text-align: center;
+}
+
+.user-comment-list {
+    border-bottom: #2c666e solid 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr;
+}
+
+.user-comment-date {
+    text-align: right;
+}
+
+.user-comment-body {
+    grid-column: 1/3;
+}
