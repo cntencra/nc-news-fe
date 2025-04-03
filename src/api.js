@@ -25,6 +25,12 @@ export const getComments = (articleId) => {
   }))
 }
 
+export const getUserComments = (userName) => {
+  return api.get(`/comments/${userName}`).then(({ data }) => {
+    return data.comments
+  })
+}
+
 export const patchArticleVotes = (articleId, vote) => {
   return api.patch(`/articles/${articleId}`, {inc_votes: vote}).then((response) => {
     return response.data.comment
@@ -35,4 +41,8 @@ export const postComment = (articleId, author, body) => {
   return api.post(`/articles/${articleId}/comments`, {author, body}).then(({ data }) => {
     return data.comment
   })
+}
+
+export const deleteComment = (commentId) => {
+  return api.delete(`/comments/${commentId}`)
 }
