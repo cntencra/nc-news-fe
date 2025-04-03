@@ -7,10 +7,17 @@ const api = axios.create({
 });
 
 
-export const getArticles = () => {
-    return api.get("/articles").then((response) => {
-        return response.data.articles
+export const getArticles = (topic) => {
+
+  if (topic) {
+    return api.get(`/articles?topic=${topic}`).then((response) => {
+      return response.data.articles
     })
+  }
+
+  return api.get("/articles").then((response) => {
+        return response.data.articles
+  })
 }
 
 export const getArticle = (articleId) => {
@@ -28,6 +35,12 @@ export const getComments = (articleId) => {
 export const getUserComments = (userName) => {
   return api.get(`/comments/${userName}`).then(({ data }) => {
     return data.comments
+  })
+}
+
+export const getTopics = () => {
+  return api.get(`/topics`).then(({data}) => {
+    return data.topics
   })
 }
 

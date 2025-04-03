@@ -106,6 +106,41 @@ nav {
     color: #07393c
 }
 
+.topics-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.topics-dropdown-content {
+    margin : 0;
+    padding:0;
+    padding-left: 20%;
+    padding-right:20%;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.topics-dropdown-content > li {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.topics-dropdown-content > li > a {
+    text-decoration: none;
+}
+
+.topicsdropdown-content a:hover {
+    text-decoration: underline;
+}
+
+.topics-dropdown:hover .topics-dropdown-content {
+    display: block;
+}
+
+
 
 
 @media only screen and (min-width: 800px) {

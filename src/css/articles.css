@@ -1,3 +1,8 @@
+#articles-title {
+    text-align: center;
+}
+
+
 #articles-list > ul {
     padding-right: 40px;
     padding-top: 20px;
