@@ -46,7 +46,11 @@ const PostComment = ({articleId, addComment, userName}) => {
         </div>
     ) 
 
-    if (isLoading) return <p>Attempting to post... </p>
+    if (isLoading) return (
+        <div id="post-comment-loading">
+            <p>Attempting to post...</p>
+        </div>
+    )
 
     if (isSuccessful) {
         return (
