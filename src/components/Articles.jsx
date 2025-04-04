@@ -1,9 +1,10 @@
 import '../css/articles.css'
 import { getArticles } from "../api"
-import ListArticle from "./ListArticle";
+import ArticleCard from "./ArticleCard";
 import useApiRequest from "../useApiRequest";
 import { useParams, useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
+import ErrorMsg from './ErrorMsg';
 
  const Articles = () => {
 
@@ -11,8 +12,6 @@ import { useEffect } from 'react';
     const sortByQuery = searchParams.get("sort_by");
     const orderQuery = searchParams.get("order");
     const topicQuery = searchParams.get("topic");
-
-    console.log(searchParams)
     
     const {data:articles, isLoading, error } = useApiRequest(getArticles, searchParams);
 
@@ -32,7 +31,7 @@ import { useEffect } from 'react';
 
     },[sortByQuery,orderQuery, topicQuery])
 
-    if (error) return <p>Error {error.msg}</p>
+    if (error) return <ErrorMsg error={error} />
 
     if (isLoading) return <p>Loading... </p>
     
@@ -64,7 +63,7 @@ import { useEffect } from 'react';
             {articles.map((article)=> {
                 return (
                 <li key={article.article_id}>
-                    <ListArticle article={article}/>
+                    <ArticleCard article={article}/>
                 </li>
                 )
             })}
