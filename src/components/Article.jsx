@@ -7,6 +7,7 @@ import MainArticle from './MainArticle';
 
 import { getArticle } from '../api';
 import useApiRequest from '../useApiRequest';
+import ErrorMsg from './ErrorMsg';
 
 
 const Article = () => {
@@ -15,7 +16,7 @@ const Article = () => {
 
     const{data:article, isLoading, error} = useApiRequest(getArticle, article_id)
     
-    if (error) return <p>Error {error.msg}</p>
+    if (error) return <ErrorMsg error={error} />
 
     if (isLoading) return <p>Loading... </p>
 

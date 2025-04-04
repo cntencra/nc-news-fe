@@ -24,7 +24,7 @@ const UserProfile = () => {
         setData([...commentsOneRemoved])
     }
 
-    if (error) return <p>Error {error.msg}</p>
+    if (error) return <ErrorMsg error={error} />
 
     if (isLoading) return <p>Loading... </p>
 

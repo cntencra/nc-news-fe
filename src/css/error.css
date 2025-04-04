@@ -1,0 +1,8 @@
+.error-page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-page-container > p {
+    text-align: center;
+}

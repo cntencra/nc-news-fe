@@ -2,6 +2,7 @@ import { Link, Links } from "react-router-dom"
 import useApiRequest from "../useApiRequest";
 import { useState } from "react";
 import { getTopics } from "../api";
+import ErrorMsg from "./ErrorMsg";
 
 const Navbar = () => {
 
@@ -30,7 +31,7 @@ const Navbar = () => {
             error ?
             <ul className="topics-dropdown-content">
                 <li className="topic-dropdown">
-                    Topics failed to load
+                    <ErrorMsg error={error}/>
                 </li>
             </ul>
             :

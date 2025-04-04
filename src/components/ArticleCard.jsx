@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const ListArticle = ({article}) => {
+const ArticleCard = ({article}) => {
 
     const date  = (new Date(article.created_at)).toLocaleDateString('en-GB')
     return (
@@ -23,4 +23,4 @@ const ListArticle = ({article}) => {
 
 }
 
-export default ListArticle
+export default ArticleCard
