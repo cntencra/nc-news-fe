@@ -28,10 +28,10 @@ const ArticleVotes = ({article}) => {
                 Likes {article.votes + optimisticVotes}
             </div>
             <button className="article-thumb-up" onClick={() => handleVote(1)}>
-                <img src="../../src/assets/thumbs-up-svgrepo-com.svg" alt="Up vote" />
+                <img src="https://www.svgrepo.com/show/40630/thumbs-up.svg" alt="Up vote" />
             </ button>
             <button className="article-thumb-down" onClick={() => handleVote(-1)}>
-                <img src="../../src/assets/thumb-down-svgrepo-com.svg" alt="Down vote" />
+                <img src="https://www.svgrepo.com/show/56144/thumb-down.svg" alt="Down vote" />
             </button>
 
         </div>

@@ -47,7 +47,7 @@ const DeleteComment = ({commentId, onCommentDelete}) => {
 
     return (
     <button className="comment-delete" onClick={() => removeComment( commentId)}>
-        <img src="../../src/assets/trash-delete-bin-svgrepo-com.svg" alt="Delete comment" />
+        <img src="https://www.svgrepo.com/show/380116/trash-delete-bin.svg" alt="Delete comment" />
     </button>
     )
 
