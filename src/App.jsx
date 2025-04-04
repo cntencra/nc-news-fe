@@ -7,6 +7,7 @@ import Articles from './components/Articles';
 import Article from './components/Article';
 import UserProfile from './components/UserProfile';
 import HomePage from './components/HomePage';
+import ErrorPage from './components/ErrorPage';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path = '/articles' element={<Articles />}/>
         <Route path = '/article/:article_id' element={<Article />}/>
         <Route path = '/user' element={<UserProfile />}/>
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </main>
     </>
