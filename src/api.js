@@ -7,15 +7,9 @@ const api = axios.create({
 });
 
 
-export const getArticles = (topic) => {
-
-  if (topic) {
-    return api.get(`/articles?topic=${topic}`).then((response) => {
-      return response.data.articles
-    })
-  }
-
-  return api.get("/articles").then((response) => {
+export const getArticles = ( searchParams) => {
+  console.log(...searchParams)
+  return api.get("/articles", { params: searchParams }).then((response) => {
         return response.data.articles
   })
 }
