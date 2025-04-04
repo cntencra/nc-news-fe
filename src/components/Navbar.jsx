@@ -15,8 +15,8 @@ const Navbar = () => {
             
             <div className="topics-dropdown">
 
-                <div className="nav-div">
-                    <h2>Topics</h2>
+                <div className="nav-div nav-topic-title">
+                    <h2 >Topics</h2>
                 </div>
 
             {
@@ -38,7 +38,7 @@ const Navbar = () => {
                 {topics.map((topic)=> {
                     return (
                     <li key={topic.slug} className="topic-list-item">
-                        <Link to={`/articles/${topic.slug}`} >
+                        <Link to={`/articles/?topic=${topic.slug}`} >
                             {topic.slug.slice(0,1).toUpperCase() + topic.slug.slice(1).toLowerCase()}
                         </Link>
                     </li>

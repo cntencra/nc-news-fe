@@ -102,13 +102,16 @@ nav {
 
 .nav-div:hover {
     text-decoration: underline;
-    cursor: pointer;
-    color: #07393c
+    color: #07393c;
 }
 
 .topics-dropdown {
     position: relative;
     display: inline-block;
+}
+
+.nav-topic-title {
+    cursor: default;
 }
 
 .topics-dropdown-content {
@@ -132,7 +135,7 @@ nav {
     text-decoration: none;
 }
 
-.topicsdropdown-content a:hover {
+.topics-dropdown-content a:hover {
     text-decoration: underline;
 }
 

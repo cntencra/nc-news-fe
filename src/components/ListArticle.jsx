@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 
 const ListArticle = ({article}) => {
+
+    const date  = (new Date(article.created_at)).toLocaleDateString('en-GB')
     return (
    <div id="list-article-container">
         <h3> 
@@ -11,6 +13,9 @@ const ListArticle = ({article}) => {
             <p>{`Author: ${article.author}`}</p>
             <p>{`Topic: ${article.topic}`}</p>
             <p>{`Likes: ${article.votes}`}</p>
+            <p>{`Comments: ${article.comment_count}`}</p>
+            <p>{`${date}`}</p>
+            
         </div>
     </div>
     
