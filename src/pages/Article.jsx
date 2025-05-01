@@ -2,12 +2,13 @@ import '../css/article.css'
 
 import { useParams } from 'react-router-dom';
 
-import Comments from './Comments';
-import MainArticle from './MainArticle';
+import Comments from '../components/Comments';
+import MainArticle from '../components/MainArticle';
 
 import { getArticle } from '../api';
 import useApiRequest from '../useApiRequest';
-import ErrorMsg from './ErrorMsg';
+import ErrorMsg from '../components/ErrorMsg';
+import Loading from './Loading';
 
 
 const Article = () => {
@@ -18,7 +19,7 @@ const Article = () => {
     
     if (error) return <ErrorMsg error={error} />
 
-    if (isLoading) return <p>Loading... </p>
+    if (isLoading) return <Loading/>
 
     return (
     <>

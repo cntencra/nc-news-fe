@@ -3,7 +3,7 @@ import { UserContext } from "../contexts/User"
 import { getUserComments } from "../api"
 import '../css/user-profile.css'
 import useApiRequest from "../useApiRequest"
-import DeleteComment from "./DeleteComment"
+import DeleteComment from "../components/DeleteComment"
 
 const UserProfile = () => {
 

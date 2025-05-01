@@ -3,11 +3,12 @@ import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Articles from './components/Articles';
-import Article from './components/Article';
-import UserProfile from './components/UserProfile';
-import HomePage from './components/HomePage';
-import ErrorPage from './components/ErrorPage';
+import Articles from './pages/Articles';
+import Article from './pages/Article';
+import UserProfile from './pages/UserProfile';
+import HomePage from './pages/HomePage';
+import ErrorPage from './pages/ErrorPage';
+import Loading from './pages/Loading';
 
 function App() {
 

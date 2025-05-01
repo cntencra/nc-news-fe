@@ -1,10 +1,11 @@
 import '../css/articles.css'
 import { getArticles } from "../api"
-import ArticleCard from "./ArticleCard";
+import ArticleCard from "../components/ArticleCard";
 import useApiRequest from "../useApiRequest";
-import { useParams, useSearchParams } from 'react-router-dom';
+import {  useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
-import ErrorMsg from './ErrorMsg';
+import ErrorMsg from '../components/ErrorMsg';
+import Loading from './Loading';
 
  const Articles = () => {
 
@@ -33,7 +34,7 @@ import ErrorMsg from './ErrorMsg';
 
     if (error) return <ErrorMsg error={error} />
 
-    if (isLoading) return <p>Loading... </p>
+    if (isLoading) return <Loading/>
     
     return (
         <>
