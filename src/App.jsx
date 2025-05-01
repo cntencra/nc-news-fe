@@ -23,6 +23,7 @@ function App() {
         <Route path = '/articles' element={<Articles />}/>
         <Route path = '/article/:article_id' element={<Article />}/>
         <Route path = '/user' element={<UserProfile />}/>
+        <Route path = '/loading' element={<Loading />}/>
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </main>
