@@ -11,7 +11,7 @@ const Header = () => {
         <>
         <div id="header-container">
             <Link to ='/'>
-            <div id="home-icon-container"><img src="assets/news-icon.png" alt="Chris's News Logo" /></div>
+            <div id="home-icon-container"><img src="src/assets/news-icon.jpg" alt="Chris's News Logo" /></div>
             </Link>
             <h1>Chris's NC News</h1>
             <div id="header-logged-in-user">
