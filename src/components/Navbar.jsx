@@ -48,9 +48,6 @@ const Navbar = () => {
             </ul> 
             }
             </div>
-            <Link to ="/loading">
-                <div id="loading-nav" className="loading-div"><h2>Loading</h2></div>
-            </Link>
 
         </nav>
     )
