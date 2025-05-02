@@ -26,27 +26,30 @@ header {
 #header-container > h1 {
     text-align: center;
     margin-left: 2vw;
-    font-size:larger;
+    font-size:x-large;
 }
 
 
 #header-logged-in-user  {
-    max-width:2rem;
+    max-width:3rem;
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    margin-right: 1rem;;
     align-items: center;
 }
 
 #header-logged-in-user > a {
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #header-logged-in-user > a > img {
-    margin-top: 10px;
-    max-width: 70%;
+
+    width: 3rem;
     background-color: #f0edee;
     border-radius: 60%;
 }
@@ -56,7 +59,7 @@ header {
     position: absolute;
     background-color: white;
     color: #0a090c;
-    translate: -30px 50px;
+    translate: 0 4rem;
 }
 
 #header-logged-in-user:hover .hidden-user {
@@ -78,7 +81,7 @@ nav {
 
 .nav-div > h2 {
     margin-bottom: 2px;
-    font-size: medium;
+    font-size: larger;
 }
 
 .nav-div:hover {
@@ -135,11 +138,6 @@ nav {
     #header-container > h1 {
         margin-left: 10vw;
         font-size: xx-large;
-    }
-
-    #header-logged-in-user {
-        margin-right: 1%;
-        
     }
 
     .nav-div > h2 {
