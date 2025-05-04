@@ -4,6 +4,7 @@ import { getUserComments } from "../api"
 import '../css/user-profile.css'
 import useApiRequest from "../useApiRequest"
 import DeleteComment from "../components/DeleteComment"
+import ErrorMsg from "../components/ErrorMsg"
 
 const UserProfile = () => {
 
