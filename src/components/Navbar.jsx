@@ -1,6 +1,5 @@
-import { Link, Links } from "react-router-dom"
+import { Link } from "react-router-dom"
 import useApiRequest from "../useApiRequest";
-import { useState } from "react";
 import { getTopics } from "../api";
 import ErrorMsg from "./ErrorMsg";
 
@@ -10,8 +9,11 @@ const Navbar = () => {
 
     return (
         <nav>
+            <Link to ="/">
+                <div id="home-nav" className="nav-div"><h2>Home</h2></div>
+            </Link>
             <Link to ="/articles">
-                <div id="articles-nav" className="nav-div"><h2>Articles</h2></div>
+                <div id="articles-nav" className="nav-div"><h2>All Articles</h2></div>
             </Link>
             
             <div className="topics-dropdown">
