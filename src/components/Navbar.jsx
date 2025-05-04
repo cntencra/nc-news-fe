@@ -1,6 +1,5 @@
-import { Link, Links } from "react-router-dom"
+import { Link } from "react-router-dom"
 import useApiRequest from "../useApiRequest";
-import { useState } from "react";
 import { getTopics } from "../api";
 import ErrorMsg from "./ErrorMsg";
 
