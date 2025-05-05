@@ -14,12 +14,15 @@ a {
 }
 
 h3 {
-    font-size: medium;
     padding-left: 5vw;
 }
 
 p {
     font-size:small;
+}
+
+h5 {
+  font-size:large
 }
 
 
@@ -56,4 +59,11 @@ p {
     }
   }
 
- 
+
+
+  button
+  {
+    font-family: inherit; 
+    font-size: 100%; 
+  }
+  
