@@ -7,9 +7,9 @@ const HomeCard = ({article, index}) => {
     <div className={`home-article-container`}>
         <Link to={`/article/${article.article_id}`}>
         <img src={article.article_img_url} alt="" />
-        <h3>
+        <h4>
             {article.title}
-        </h3>
+        </h4>
         </Link>
     </div>
     )
