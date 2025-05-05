@@ -1,11 +1,10 @@
 .home-title {
     margin-left: 5px;
-    padding-left: 5vw;;
 }
 
 .home-grid {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
     max-width: 100%;
 }
 
@@ -17,31 +16,31 @@
 }
 
 .home-list-1 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .home-list-2 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .home-list-3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 .home-list-4 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 .home-article-container {
@@ -51,3 +50,73 @@
 .home-article-container > a > img{
     max-width: 100%;
 }
+
+@media only screen and (min-width: 800px) {
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        max-width: 100%;
+    }
+    
+    .home-list-0 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .home-list-1 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .home-list-2 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .home-list-3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .home-list-4 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .home-article-container {
+        margin: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    h3{
+      padding-left: 10vw;
+    }
+
+    ul {
+      padding-right:  10vw;
+      padding-left: 10vw;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    h3{
+      padding-left: 15vw;
+    }
+
+    ul {
+      padding-right:  15vw;
+      padding-left: 15vw;
+    }
+  }
