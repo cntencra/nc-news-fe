@@ -56,7 +56,7 @@ const HomePage = () => {
         <> 
             {articleSections.map(({ title, articles }) => (
             <div key={title}>
-                <Link to={title === 'Popular' ? `articles/?order=desc&sort_by=votes` : `articles/?topic=${title.toLowerCase()}`}><h2 className="home-title">{title}</h2></Link>
+                <Link to={title === 'Popular' ? `articles/?order=desc&sort_by=votes` : `articles/?topic=${title.toLowerCase()}`}><h3 className="home-title">{title}</h3></Link>
                 <ul className="home-grid">
                 {articles.map((article, index) => (
                     <li key={article.article_id} 
