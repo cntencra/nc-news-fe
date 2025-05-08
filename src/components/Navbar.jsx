@@ -16,9 +16,11 @@ const Navbar = () => {
             
             <div className="topics-dropdown">
 
+                <Link to={`articles/?order=desc&sort_by=votes`}>
                 <div className="nav-div nav-topic-title">
                     <h2 >Topics</h2>
                 </div>
+                </Link>
 
             {
             isLoading ?
