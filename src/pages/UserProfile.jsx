@@ -5,6 +5,7 @@ import '../css/user-profile.css'
 import useApiRequest from "../useApiRequest"
 import DeleteComment from "../components/DeleteComment"
 import ErrorMsg from "../components/ErrorMsg"
+import Loading from "./Loading"
 
 const UserProfile = () => {
 
@@ -27,7 +28,7 @@ const UserProfile = () => {
 
     if (error) return <ErrorMsg error={error} />
 
-    if (isLoading) return <p>Loading... </p>
+    if (isLoading) return <Loading/>
 
 
     return (
