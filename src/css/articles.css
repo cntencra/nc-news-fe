@@ -112,6 +112,13 @@
     text-decoration: underline;
 }
 
+.more-articles-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 @media only screen and (min-width: 800px) {
 
     #list-article-container {
