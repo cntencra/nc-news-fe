@@ -33,7 +33,7 @@ const UserProfile = () => {
 
     return (
         <div id="user-comments-container">
-            <h2 id="user-comment-title">{userName}'s' Comments</h2>
+            <h2 id="user-comment-title">{userName}'s Comments</h2>
             <ul>
                 {comments.map((comment) => {
                     const date  = (new Date(comment.created_at)).toLocaleDateString('en-GB')
