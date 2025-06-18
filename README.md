@@ -2,6 +2,9 @@
 ### Link to the site
 [Chris' NC News](https://chris-nc-news.netlify.app/)
 
+### Link to the backend repo
+[nc-news backend](https://github.com/cntencra/nc-news-be)
+
 ## Overview
 
 A news application where you can post comments and like your favourite news.
