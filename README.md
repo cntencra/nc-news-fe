@@ -9,10 +9,6 @@
 
 A news application where you can post comments and like your favourite news.
 
-## api
-
-[GitHub back end repository](https://github.com/cntencra/nc-news-be)
-
 ## Clone the repo
 ```bash
 cd ~/path_to_dir/
