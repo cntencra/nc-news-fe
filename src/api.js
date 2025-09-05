@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const api = axios.create({
-  baseURL: "https://chris-nc-news.onrender.com/api",
+  baseURL: "https://nc-news-be-i15f.onrender.com/api",
   timeout: 1000,
 });
 
