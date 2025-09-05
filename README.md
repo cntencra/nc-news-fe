@@ -1,6 +1,7 @@
 # Chris's NC News
 ### Link to the site
 [Chris' NC News](https://chris-nc-news.netlify.app/)
+The backend is hosted on renders free tier so may take some time to load
 
 ### Link to the backend repo
 [nc-news backend](https://github.com/cntencra/nc-news-be)
